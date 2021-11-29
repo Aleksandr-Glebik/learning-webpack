@@ -1,0 +1,28 @@
+{
+  "name": "learning-webpack",
+  "version": "1.0.0",
+  "description": "webpack project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aleksandr-Glebik/learning-webpack.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "webpack"
+  ],
+  "author": "Aleksandr Glebik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aleksandr-Glebik/learning-webpack/issues"
+  },
+  "homepage": "https://github.com/Aleksandr-Glebik/learning-webpack#readme",
+  "devDependencies": {
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  }
+}
