@@ -1,1 +1,1 @@
-console.log("Hello world!");
+(()=>{var o={551:()=>{console.log("Header component")}},e={};function r(t){var l=e[t];if(void 0!==l)return l.exports;var s=e[t]={exports:{}};return o[t](s,s.exports,r),s.exports}(()=>{"use strict";r(551),console.log("Hello world!"),console.log("Config key: ","123456789"),new class{constructor(o){this.text=o}log(){console.log("[App service]: ",this.text)}}("Hello world 2!!!").log()})()})();
