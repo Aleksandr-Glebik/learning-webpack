@@ -1,1 +1,10 @@
-console.log('Header component');
+// console.log('Header component');
+import $ from 'jquery'
+
+$('<h1 />')
+    .text('Hello world from JQuery')
+    .css({
+        textAlign: 'center',
+        color: 'blue'
+    })
+    .appendTo($('header'))
