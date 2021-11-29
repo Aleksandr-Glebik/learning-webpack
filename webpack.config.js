@@ -15,6 +15,12 @@ module.exports = {
         ],
         minimize: true,
     },
+    devServer: {
+        static: {
+            directory: path.join(__dirname, 'dist'),
+          },
+          port: 4200,
+    },
     plugins: [
         new HTMLPlugin({
             filename: 'index.html',
