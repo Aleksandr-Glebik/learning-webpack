@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Aleksandr-Glebik/learning-webpack#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1"
   }
