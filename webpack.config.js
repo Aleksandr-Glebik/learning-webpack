@@ -11,7 +11,8 @@ module.exports = {
     },
     optimization: {
         minimizer: [
-            new CssMinimizerPlugin(),
+            new CssMinimizerPlugin({}),
+            // new MiniCssExtractPlugin({}),
         ],
         minimize: true,
     },
@@ -35,6 +36,16 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader']
+            },
+            {
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                  loader: "babel-loader",
+                  options: {
+                    presets: ['@babel/preset-env']
+                  }
+                }
             }
         ]
     }

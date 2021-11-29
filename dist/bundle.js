@@ -10953,47 +10953,54 @@ var __webpack_exports__ = {};
 "use strict";
 
 ;// CONCATENATED MODULE: ./src/modules/app.service.js
-class AppService {
-    constructor(text) {
-        this.text = text
-    }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-    log() {
-        console.log('[App service]: ', this.text)
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var AppService = /*#__PURE__*/function () {
+  function AppService(text) {
+    _classCallCheck(this, AppService);
+
+    this.text = text;
+  }
+
+  _createClass(AppService, [{
+    key: "log",
+    value: function log() {
+      console.log('[App service]: ', this.text);
     }
-}
+  }]);
+
+  return AppService;
+}();
+
+
 ;// CONCATENATED MODULE: ./src/modules/config.js
-const config = {
-    key: '123456789',
-
-}
+var config = {
+  key: '123456789'
+};
 // EXTERNAL MODULE: ./node_modules/jquery/dist/jquery.js
 var jquery = __webpack_require__(755);
 var jquery_default = /*#__PURE__*/__webpack_require__.n(jquery);
 ;// CONCATENATED MODULE: ./src/modules/header.component.js
 // console.log('Header component');
 
-
-jquery_default()('<h1 />')
-    .text('Hello world from JQuery')
-    .css({
-        textAlign: 'center',
-        color: 'blue'
-    })
-    .appendTo(jquery_default()('header'))
+jquery_default()('<h1 />').text('Hello world from JQuery').css({
+  textAlign: 'center',
+  color: '#04044e'
+}).appendTo(jquery_default()('header'));
 ;// CONCATENATED MODULE: ./src/index.js
 
 
 
 
-
 console.log(css.toString());
-
 console.log('Hello world!');
-console.log('Config key: ', config.key )
-
-const service = new AppService('Hello world 2!!!')
-service.log()
+console.log('Config key: ', config.key);
+var service = new AppService('Hello world 2!!!');
+service.log();
 })();
 
 /******/ })()

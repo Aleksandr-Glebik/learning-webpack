@@ -25,6 +25,10 @@
   },
   "homepage": "https://github.com/Aleksandr-Glebik/learning-webpack#readme",
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.2.0",
     "html-webpack-plugin": "^5.5.0",
@@ -35,6 +39,7 @@
     "webpack-dev-server": "^4.6.0"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "jquery": "^3.6.0"
   }
 }
