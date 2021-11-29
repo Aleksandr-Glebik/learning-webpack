@@ -9,13 +9,6 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
-    optimization: {
-        minimizer: [
-            new CssMinimizerPlugin({}),
-            // new MiniCssExtractPlugin({}),
-        ],
-        minimize: true,
-    },
     devServer: {
         static: {
             directory: path.join(__dirname, 'dist'),
@@ -29,13 +22,17 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: 'style.css'
-        })
+        }),
     ],
     module: {
         rules: [
             {
-                test: /\.css$/,
+                test: /.s?css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader']
+            },
+            {
+                test: /\.less$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader']
             },
             {
                 test: /\.m?js$/,
@@ -46,7 +43,12 @@ module.exports = {
                     presets: ['@babel/preset-env']
                   }
                 }
-            }
+            },
+        ]
+    },
+    optimization: {
+        minimizer: [
+            new CssMinimizerPlugin(),
         ]
     }
 }
